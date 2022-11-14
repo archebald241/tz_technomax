@@ -28,7 +28,7 @@ $(document).ready(() => {
 
     function fetchAuth(phone, callback) {
         $.ajax({
-            url: `http://localhost:3000/users?user_phone=${phone}`,
+            url: `https://my-json-server.typicode.com/archebald241/tz_technomax/users?user_phone=${phone}`,
             type: 'GET',
             success: function (data) {
                 if (data.length > 0) {
@@ -101,7 +101,7 @@ $(document).ready(() => {
 
     function fetchProducts(name) {
         $.ajax({
-            url: `http://localhost:3000/products?name_like=${name}`,
+            url: `https://my-json-server.typicode.com/archebald241/tz_technomax/products?name_like=${name}`,
             type: 'GET',
             success: function (data) {
                 productsCallback(data)
