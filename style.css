@@ -125,30 +125,29 @@ header {
 }
 
 #search-form {
+    width: 50%;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-form__name {
+.search-form__input {
     margin-right: 10px;
-}
-
-.search-form__name__input {
-    width: 100%;
+    flex: 1 1 auto;
+    height: 100%;
     font-size: 16px;
     padding: 4px 10px;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 1px solid #f2f2f2;
     outline: none;
 }
 
-.search-form__name__input:focus {
+.search-form__input:focus {
     border-color: #7ca8d5;
 }
 
-.search-form__name__label {
-    font-size: 13px;
-    color: #C8C8C8;
+.search-form__button {
+    height: auto;
 }
 
 #products-container {
