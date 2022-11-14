@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>Тестовое задание </title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div id="auth">
+            <form id="auth-form">
+                <fieldset>
+                    <legend>Форма авторизации</legend>
+                    <div class="auth-form__phone">
+                        <input class="auth-form__phone__input" type="tel" id="phone" autocomplete="off"
+                            placeholder="71112223344" list="phone_book">
+                        <label class="auth-form__phone__label" for="phone">*номер телефона должен содержать только
+                            цифры</label>
+                        <datalist id="phone_book">
+                            <option value="79998887766">Номер телефона Олега</option>
+                        </datalist>
+                    </div>
+                    <button class="auth-form__submit" type="submit">Авторизоваться</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="products">
+            <form id="search-form">
+                <div class="search-form__name">
+                    <input class="search-form__name__input" type="tel" id="product_name" autocomplete="off"
+                        placeholder="Введите название продукта">
+                    <label class="search-form__name__label" for="product_name">*введите полное название продукта</label>
+                </div>
+                <button type="submit">Найти</button>
+            </form>
+            <div id="products-container">
+                <div id="catecories-container">
+                    <ul id="catecories-list">
+                    </ul>
+                </div>
+                <div id="products-list">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

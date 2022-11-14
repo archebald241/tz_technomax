@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+}
+
+main {
+    width: 95vw;
+
+    border-radius: 8px;
+    padding: 30px;
+    margin: 2.5vh 2.5vw;
+    flex: 1 1 auto;
+
+    background-color: white;
+}
+
+button {
+    padding: 6px 25px;
+    border-radius: 4px;
+    position: relative;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+
+    background-color: #1C7EDF;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button:active {
+    top: 4px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1C7EDF;
+}
+
+.username {
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+#auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth-form {
+    width: 50%;
+}
+
+#auth-form fieldset {
+    border: 2px solid #1C7EDF;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#auth-form fieldset legend {
+    padding: 6px;
+    font-size: 20px;
+}
+
+.auth-form__phone {
+    margin-bottom: 10px;
+}
+
+.auth-form__phone__input {
+    width: 100%;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+}
+
+.auth-form__phone__input:focus {
+    border-color: #7ca8d5;
+}
+
+.auth-form__phone__label {
+    font-size: 13px;
+    color: #C8C8C8;
+}
+
+.auth-form__submit {
+    display: block;
+    margin-left: auto;
+}
+
+
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#search-form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-form__name {
+    margin-right: 10px;
+}
+
+.search-form__name__input {
+    width: 100%;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    outline: none;
+}
+
+.search-form__name__input:focus {
+    border-color: #7ca8d5;
+}
+
+.search-form__name__label {
+    font-size: 13px;
+    color: #C8C8C8;
+}
+
+#products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+#catecories-container {
+    margin-top: 30px;
+}
+
+#catecories-list {
+    padding: 0 10px;
+    border-left: 1px solid #1C7EDF;
+}
+
+.catecories-list__item {
+    padding: 4px 8px;
+    margin: 8px 0;
+}
+
+.catecories-list__item::first-letter {
+    text-transform: capitalize;
+}
+
+.catecories-list__item a {
+    font-size: 20px;
+}
+
+.catecories-list__item a:hover {
+    color: #1C7EDF;
+}
+
+.catecories-list__item__count {
+    font-size: 16px;
+    color: #C8C8C8;
+}
+
+#products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 10px;
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    border-color: #C8C8C8;
+}
+
+.product-card__title img {
+    width: 230px;
+    height: 250px;
+}
+
+.product-card__body {
+    padding: 10px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.product-card__body__name {
+    flex: 1 1 auto;
+}
+
+.product-card__body__name::first-letter {
+    text-transform: capitalize;
+}
+
+.product-card__body__name a {
+    font-size: 18px;
+}
+
+.product-card__body__price {
+    margin-left: 10px;
+    margin-top: 6px;
+    color: #858585;
+}
+
+#products-list>.not-found {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    #products-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #auth-form {
+        width: 100%;
+    }
+
+    #products-container {
+        grid-template-columns: 1fr;
+    }
+}

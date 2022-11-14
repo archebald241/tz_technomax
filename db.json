@@ -1,0 +1,66 @@
+{
+    "users": [
+        {
+            "user_phone": "79998887766",
+            "user_name": "Олег"
+        },
+        {
+            "user_phone": "79991112233",
+            "user_name": "Иван"
+        },
+        {
+            "user_phone": "79994412345",
+            "user_name": "Илья"
+        }
+    ],
+    "products": [
+        {
+            "name": "шкаф хороший вещи складывать",
+            "price": "3200",
+            "image": "https://www.shatura.com/upload/iblock/9ec/1ck9jbaixtdi71kmy04q2mkngdxi5uoy.jpg",
+            "category": "мебель"
+        },
+        {
+            "name": "кружка котик",
+            "price": "500",
+            "image": "https://cdn3.static1-sima-land.com/items/3806704/0/700.jpg?v=1559303715",
+            "category": "посуда"
+        },
+        {
+            "name": "стол компьютерный кайфовый",
+            "price": "1399",
+            "image": "https://www.bestmebelshop.ru/upload/resize_cache/iblock/76b/1000_666_1cb3ed90bb4b099ee9292aa8dda3584d7/76b7ad06af8061c975ab258d03c59511.jpg",
+            "category": "мебель"
+        },
+        {
+            "name": "кофта стильная модная для всей семьи",
+            "price": "4000",
+            "image": "https://ae01.alicdn.com/kf/H6c41f4ecbb044b22b329d506941a157cG.jpg",
+            "category": "одежда"
+        },
+        {
+            "name": "футболка для работы в дружном коллективе",
+            "price": "1200",
+            "image": "https://printbar.ru/upload/thumb/images/14/14be9jf6e_580x0.jpg",
+            "category": "одежда"
+        },
+        {
+            "name": "полочка для приправ",
+            "price": "954",
+            "image": "https://www.hit-dekor.ru/images/detailed/19/07780_1.jpg",
+            "category": "мебель"
+        },
+        {
+            "name": "набор тарелка кружка чтоб приятно всегда кушать было",
+            "price": "259",
+            "image": "https://storage.vsemayki.ru/images/0/2/2954/2954275/previews/people_12_set_of_dishes_front_white_500.jpg",
+            "category": "посуда"
+        },
+        {
+            "name": "кросовки хорошие ходить зима лето",
+            "price": "10999",
+            "image": "https://sneakers-type.ru/wp-content/uploads/2021/08/xKrossovki-Adidas-Niteball-White-Purple-e1629656463471.jpg.pagespeed.ic.iWq5MChJ3x.jpg",
+            "category": "одежда"
+        }
+    ]
+}
